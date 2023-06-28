@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Julie Keisler"
+title                    : "Yuan Yin"
 title_separator          : "-"
-name                     : &name "Julie Keisler"
-description              : &description "PhD student at EDF R&D and Inria Lille Nord Europe."
-url                      : https://juliekeisler.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Yuan Yin"
+description              : &description "personal description"
+url                      : https://yuan-yin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "juliekeisler/juliekeisler.github.io"
+repository               : "yuan-yin/yuan-yin.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter
 facebook:
   username               :
   app_id                 :
@@ -80,36 +80,36 @@ analytics:
 
 # Site Author
 author:
-  name             : "Julie Keisler"
-  avatar           : "photokeisler.png"
-  bio              : "2nd-year PhD Student in EDF R&D and Inria Lille Nord Europe, BONUS Team."
+  name             : "Yuan Yin"
+  avatar           : "https://avatars.githubusercontent.com/u/11399307"
+  bio              : "Final-year PhD Student in MLIA Team at ISIR - Sorbonne Université"
   location         : "Paris, France"
-  employer         :
+  employer         : 
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=TWowILgAAAAJ&hl=fr"
-  email            : "julie.keisler_at_edf.fr
-  researchgate     :  "https://www.researchgate.net/profile/Julie-Keisler-2"
-  uri              :
+  googlescholar    : "https://scholar.google.com/citations?user=ynep174AAAAJ&hl=fr"
+  email            : "yuan.yin@sorbonne-universite.fr"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "juliekeisler"
+  github           : "yuan-yin"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : 
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/julie-keisler/"
-  orcid            : "https://orcid.org/0000-0002-7931-2132"
+  linkedin         :
+  orcid            : "https://orcid.org/0000-0003-1515-0696"
   pinterest        :
   soundcloud       :
-  stackoverflow    :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "yuanyinnn"
   vine             :
   weibo            :
   xing             :

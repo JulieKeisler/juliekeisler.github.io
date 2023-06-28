@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yuan Yin"
+title                    : "Julie Keisler"
 title_separator          : "-"
-name                     : &name "Yuan Yin"
-description              : &description "personal description"
-url                      : https://yuan-yin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Julie Keisler"
+description              : &description "Ph.D. Student | EDF Lab Paris-Saclay & Inria Lille Nord Europe"
+url                      : https://juliekeisler.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yuan-yin/yuan-yin.github.io"
+repository               : "juliekeisler/juliekeisler.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yuan Yin"
-  avatar           : "https://avatars.githubusercontent.com/u/11399307"
-  bio              : "Final-year PhD Student in MLIA Team at ISIR - Sorbonne Université"
+  name             : "Julie Keisler"
+  avatar           : "photokeisler.jpg"
+  bio              : "Second-year PhD Student at EDF R&D and BONUS Team - Inria Lille Nord Europe"
   location         : "Paris, France"
   employer         : 
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=ynep174AAAAJ&hl=fr"
-  email            : "yuan.yin@sorbonne-universite.fr"
+  googlescholar    : "https://scholar.google.com/citations?user=TWowILgAAAAJ&hl=fr"
+  email            : "julie.keisler_at_edf.fr"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : 
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "yuan-yin"
+  github           : "juliekeisler"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0003-1515-0696"
+  orcid            : "https://orcid.org/0000-0002-7931-2132"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "yuanyinnn"
+  twitter          :
   vine             :
   weibo            :
   xing             :

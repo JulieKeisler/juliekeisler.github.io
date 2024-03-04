@@ -27,8 +27,8 @@ Conference, 03.07.2023 <br>
 
 *** Evolving directed acyclic graphs for Automated Deep Learning: application to short-term load forecasting.*** <br>
 Conference, 29.11.2022 <br>
-[PGMO Days](https://www.fondation-hadamard.fr/fr/programmes/les-programmes-thematiques/home/pgmo-days/), EDF Lab Paris-Saclay. <br>
-[Abstract](https://www.fondation-hadamard.fr/fr/articles/2023/01/12/pgmodays-2022/)
+[PGMO Days](https://www.fondation-hadamard.fr/fr/articles/2023/01/12/pgmodays-2022/), EDF Lab Paris-Saclay. <br>
+[Abstract](https://www.fondation-hadamard.fr/media/filer_public/64/18/64180dc1-5ca3-4806-bb44-ce17df8abf4b/pgmo-2022-booklet.pdf)
 
 ***Deep Transformers Optimization for load forecasting *** <br>
 Conference, 19.07.2022 <br>

@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a second-year PhD student at EDF R&D and in [BONUS Team](https://sites.google.com/view/bonus-research-group/) at [CRIStAL](https://www.cristal.univ-lille.fr/) (University of Lille, Inria Nord Europe).
+I am a third-year PhD student at EDF R&D and in [BONUS Team](https://sites.google.com/view/bonus-research-group/) at [CRIStAL](https://www.cristal.univ-lille.fr/) (University of Lille, Inria Nord Europe).
 
 I am supervised by [El-Ghazali Talbi](https://www.cristal.univ-lille.fr/~talbi/) professor at Polytech'Lille - University of Lille, [Margaux Brégère](https://margauxbregere.github.io/), Sandra Claudel and Gilles Cabriel from EDF. I currently visit the [ARCHES Team](https://project.inria.fr/arches/) from INRIA Paris.
 

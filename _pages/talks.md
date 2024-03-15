@@ -9,6 +9,10 @@ author_profile: true
 
 <h2>2023</h2>
 
+***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
+Seminar, 13.02.2023 <br>
+[ARCHES Seminar](https://project.inria.fr/arches/), Inria Paris, Paris. <br>
+
 ***Optimizing Deep Neural Networks Architectures and Hyperparemeters using bandits algorithms.*** <br>
 Seminar, 27.11.2023 <br>
 [SCOOL Seminar](https://team.inria.fr/scool/), Inria Nord Europe, Lille. <br>
@@ -25,7 +29,7 @@ Conference, 03.07.2023 <br>
 
 <h2>2022</h2>
 
-*** Evolving directed acyclic graphs for Automated Deep Learning: application to short-term load forecasting.*** <br>
+***Evolving directed acyclic graphs for Automated Deep Learning: application to short-term load forecasting.*** <br>
 Conference, 29.11.2022 <br>
 [PGMO Days](https://www.fondation-hadamard.fr/fr/articles/2023/01/12/pgmodays-2022/), EDF Lab Paris-Saclay. <br>
 [Abstract](https://www.fondation-hadamard.fr/media/filer_public/64/18/64180dc1-5ca3-4806-bb44-ce17df8abf4b/pgmo-2022-booklet.pdf)

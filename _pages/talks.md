@@ -7,11 +7,13 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>2023</h2>
+<h2>2024</h2>
 
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
-Seminar, 13.02.2023 <br>
+Seminar, 13.02.2024 <br>
 [ARCHES Seminar](https://project.inria.fr/arches/), Inria Paris, Paris. <br>
+
+<h2>2023</h2>
 
 ***Optimizing Deep Neural Networks Architectures and Hyperparemeters using bandits algorithms.*** <br>
 Seminar, 27.11.2023 <br>

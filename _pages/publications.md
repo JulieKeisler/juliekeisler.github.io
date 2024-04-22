@@ -18,7 +18,7 @@ author_profile: true
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
 **Julie Keisler**, Etienne Le Naour <br>
 Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024 <br>
-[arXiv](https://arxiv.org/abs/2402.14385)
+[Paper](https://www.climatechange.ai/papers/iclr2024/29)
 
 
 <h2>Preprints</h2>

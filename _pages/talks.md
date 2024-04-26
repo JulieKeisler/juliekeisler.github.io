@@ -9,6 +9,10 @@ author_profile: true
 
 <h2>2024</h2>
 
+***Mutant-UCB: entre bandits et algorithme évolutionnaire, une approche pour la sélection de modèles*** <br>
+Conference, 05.2024 <br>
+[55es Journées de Statistique de la SFdS](https://jds2024.sciencesconf.org/), Université de Bordeaux, Bordeaux. <br>
+
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
 Seminar, 13.02.2024 <br>
 [ARCHES Seminar](https://project.inria.fr/arches/), Inria Paris, Paris. <br>

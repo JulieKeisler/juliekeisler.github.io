@@ -9,9 +9,21 @@ author_profile: true
 
 <h2>2024</h2>
 
+***Automated Deep Learning for load forecasting*** <br>
+Conference, 09.2024 <br>
+[AutoML2024](https://2024.automl.cc/), Jussieu, Paris. <br>
+
 ***Mutant-UCB: entre bandits et algorithme évolutionnaire, une approche pour la sélection de modèles*** <br>
 Conference, 05.2024 <br>
 [55es Journées de Statistique de la SFdS](https://jds2024.sciencesconf.org/), Université de Bordeaux, Bordeaux. <br>
+
+***Automated Deep Learning for load forecasting*** <br>
+Workshop, 16.05.2024 <br>
+Workshop series on applied Machine Learning in Energy and Climate Science, online. <br>
+
+***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
+Workshop, 11.05.2024 <br>
+[Tackling Climate Change with Machine Learning](https://www.climatechange.ai/events/iclr2024), ICLR 2024, Wien. <br>
 
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
 Seminar, 13.02.2024 <br>

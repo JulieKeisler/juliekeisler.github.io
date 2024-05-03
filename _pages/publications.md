@@ -15,6 +15,11 @@ author_profile: true
 
 <h2>2024</h2>
 
+***Automated Deep Learning for Load Forecasting*** <br>
+**Julie Keisler**, Sandra Claudel, Gilles Cabriel, Margaux Brégère <br>
+AutoML24, ABCD Track<br>
+[Code](https://github.com/JulieKeisler/automl)
+
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
 **Julie Keisler**, Etienne Le Naour <br>
 Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024 <br>
@@ -22,10 +27,6 @@ Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024
 
 
 <h2>Preprints</h2>
-
-***Automated Deep Learning for Load Forecasting*** <br>
-**Julie Keisler**, Sandra Claudel, Gilles Cabriel, Margaux Brégère <br>
-[Code](https://github.com/JulieKeisler/automl)
 
 ***A Bandit Approach with Evolutionary Operators for Model Selection*** <br>
 Margaux Brégère, **Julie Keisler** <br>

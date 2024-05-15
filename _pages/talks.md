@@ -20,6 +20,7 @@ Conference, 05.2024 <br>
 ***Automated Deep Learning for load forecasting*** <br>
 Workshop, 16.05.2024 <br>
 Workshop series on applied Machine Learning in Energy and Climate Science, online. <br>
+[Slides](https://drive.google.com/file/d/1GZY0yqCf0EP8vIzTN39WrMVt74o4m4Lh/view?usp=sharing)<br>
 
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning*** <br>
 Workshop, 11.05.2024 <br>
@@ -38,7 +39,7 @@ Seminar, 27.11.2023 <br>
 ***Short-term load forecasting using optimized Deep Neural Networks.*** <br>
 Workshop, 13.09.2023 <br>
 [ConfStochStatML](https://wpi.univie.ac.at/), Wolfgang Pauli Institute, Wien. <br>
-[Abstract](https://wpi.univie.ac.at/fileadmin/user_upload/k_wpi/WPI_Abstract_list-contributed_speakers-finally__1_.pdf)
+[Abstract](https://wpi.univie.ac.at/fileadmin/user_upload/k_wpi/WPI_Abstract_list-contributed_speakers-finally__1_.pdf) | [Slides](https://drive.google.com/file/d/1Jl8lYudCZTTRNaHEKJz9UJ8cguXYGwni/view?usp=sharing)<br>
 
 ***Algorithme de bandits pour l’optimisation des hyperparametres de réseaux de neurones.*** <br>
 Conference, 03.07.2023 <br>

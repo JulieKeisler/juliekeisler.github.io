@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year PhD student at EDF R&D and in [BONUS Team](https://sites.google.com/view/bonus-research-group/) at [CRIStAL](https://www.cristal.univ-lille.fr/) (University of Lille, Inria Nord Europe). I currently visit the [ARCHES](https://project.inria.fr/arches/) team from INRIA Paris.
+I am a third-year PhD student at EDF R&D and at [CRIStAL](https://www.cristal.univ-lille.fr/) (University of Lille, Inria Nord Europe). I currently visit the [ARCHES](https://project.inria.fr/arches/) team from INRIA Paris.
 
 I am supervised by [Pr. Claire Monteleoni](https://www.colorado.edu/faculty/claire-monteleoni/),  [Pr. El-Ghazali Talbi](https://www.cristal.univ-lille.fr/~talbi/) and [Margaux Brégère](https://margauxbregere.github.io/).
 

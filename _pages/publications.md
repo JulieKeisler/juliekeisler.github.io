@@ -15,6 +15,11 @@ author_profile: true
 
 <h2>2024</h2>
 
+***An algorithmic framework for the optimization of deep neural networks architectures and hyperparameters.*** <br>
+**Julie Keisler**, El-Ghazali Talbi, Sandra Claudel, Gilles Cabriel.<br>
+*JMLR*.<br>
+[Preprint](https://hal.science/hal-03982852) | [Code](https://github.com/JulieKeisler/dragon)
+
 ***Automated Deep Learning for Load Forecasting.*** <br>
 **Julie Keisler**, Sandra Claudel, Gilles Cabriel, Margaux Brégère. <br>
 AutoML24, ABCD Track.<br>
@@ -31,11 +36,6 @@ Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024
 ***A Bandit Approach with Evolutionary Operators for Model Selection.*** <br>
 Margaux Brégère, **Julie Keisler**.<br>
 [Preprint](https://arxiv.org/abs/2402.05144)
-
-***An algorithmic framework for the optimization of deep neural networks architectures and hyperparameters.*** <br>
-**Julie Keisler**, El-Ghazali Talbi, Sandra Claudel, Gilles Cabriel.<br>
-*Under review at JMLR*.<br>
-[Preprint](https://hal.science/hal-03982852) | [Code](https://github.com/JulieKeisler/dragon)
 
 
 <!-- {% for post in site.publications reversed %}

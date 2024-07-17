@@ -9,12 +9,24 @@ author_profile: true
 
 <h2>2024</h2>
 
+***A Bandit Approach With Evolutionary Operators for Model Selection:  Application to Neural Architecture Optimization for Image Classification*** <br>
+Conference, 15-19.09.2024 <br>
+[ENBIS-24](https://conferences.enbis.org/event/34/), Leuven, Belgium. <br>
+
 ***Automated Deep Learning for load forecasting*** <br>
 Conference, 09.2024 <br>
 [AutoML2024](https://2024.automl.cc/), Jussieu, Paris. <br>
 
+***Automated Spatio-Temporal Weather Modeling for Load Forecasting*** <br>
+Conference, 27-28.08.2024 <br>
+[INREC 2024](https://www.inrec.wiwi.uni-due.de/), Essen. <br>
+
+***A Bandit Approach With Evolutionary Operators for Model Selection:  Application to Neural Architecture Optimization for Image Classification*** <br>
+Workshop, 25.08.2024 <br>
+[SIGKDD Workshop on Resource-Efficient Learning for Knowledge Discovery](https://chuxuzhang.github.io/RelKD/), SIGKK 2024, Barcelona. <br>
+
 ***Mutant-UCB: entre bandits et algorithme évolutionnaire, une approche pour la sélection de modèles*** <br>
-Conference, 05.2024 <br>
+Conference, 25.05.2024 <br>
 [55es Journées de Statistique de la SFdS](https://jds2024.sciencesconf.org/), Université de Bordeaux, Bordeaux. <br>
 
 ***Automated Deep Learning for load forecasting*** <br>

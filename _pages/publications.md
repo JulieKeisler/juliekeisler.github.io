@@ -17,8 +17,8 @@ author_profile: true
 
 ***An algorithmic framework for the optimization of deep neural networks architectures and hyperparameters.*** <br>
 **Julie Keisler**, El-Ghazali Talbi, Sandra Claudel, Gilles Cabriel.<br>
-*JMLR*.<br>
-[Preprint](https://hal.science/hal-03982852) | [Code](https://github.com/JulieKeisler/dragon)
+*Journal of Machine Learning Research*.<br>
+[Paper](https://jmlr.org/papers/v25/23-0166.html) | [Code](https://github.com/JulieKeisler/dragon)
 
 ***Automated Deep Learning for Load Forecasting.*** <br>
 **Julie Keisler**, Sandra Claudel, Gilles Cabriel, Margaux Brégère. <br>

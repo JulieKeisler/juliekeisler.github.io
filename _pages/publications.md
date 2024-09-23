@@ -33,8 +33,15 @@ Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024
 
 <h2>Preprints</h2>
 
+***Automated Spatio-Temporal Weather Modeling for Load Forecasting.*** <br>
+**Julie Keisler**, Margaux Brégère. <br>
+INREC 2024, Best paper award. <br>
+[Preprint](https://hal.science/hal-04703410)
+
+
 ***A Bandit Approach with Evolutionary Operators for Model Selection.*** <br>
 Margaux Brégère, **Julie Keisler**.<br>
+International Workshop on Resource-Efficient Learning for Knowledge Discovery, KDD 2024. <br>
 [Preprint](https://arxiv.org/abs/2402.05144)
 
 

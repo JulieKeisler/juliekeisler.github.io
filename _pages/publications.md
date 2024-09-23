@@ -23,7 +23,7 @@ author_profile: true
 ***Automated Deep Learning for Load Forecasting.*** <br>
 **Julie Keisler**, Sandra Claudel, Gilles Cabriel, Margaux Brégère. <br>
 AutoML24, ABCD Track.<br>
-[Preprint](https://hal.science/hal-04573056) | [Code](https://github.com/JulieKeisler/automl)
+[Preprint](https://hal.science/hal-04573056) | [Code](https://github.com/JulieKeisler/automl) | [OpenReview](https://openreview.net/forum?id=i8o3xQnfmV)
 
 ***WindDragon: Enhancing wind power forecasting with Automated Deep Learning.*** <br>
 **Julie Keisler**, Etienne Le Naour.<br>

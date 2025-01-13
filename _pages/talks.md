@@ -7,18 +7,33 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>2025</h2>
+
+***Automated Deep Learning: Algorithms and Software for Energy Sustainability*** <br>
+PhD Defense, 24.01.2025 <br>
+EDF Lab Paris-Saclay, Palaiseau. <br>
+
+***Automated Deep Learning: Algorithms and Software for Energy Sustainability*** <br>Seminar, 08.01.2025 <br>
+[LSCE Machine Learning Seminar](https://www.lsce.ipsl.fr/), LSCE, Saint-Aubin. <br>
+
+
 <h2>2024</h2>
 
+***Automated Deep Learning: Algorithms and Software for Energy Sustainability*** <br>
+Seminar, 28.11.2024 <br>
+Séminaire invité-entreprise M2 Mathématiques et Apprentissage Statistique, UVSQ, Saint-Quentin-en-Yvelines. <br>
+
+
 ***A Bandit Approach With Evolutionary Operators for Model Selection:  Application to Neural Architecture Optimization for Image Classification*** <br>
-Conference, 15-19.09.2024 <br>
+Conference, 17.09.2024 <br>
 [ENBIS-24](https://conferences.enbis.org/event/34/), Leuven, Belgium. <br>
 
 ***Automated Deep Learning for load forecasting*** <br>
-Conference, 09.2024 <br>
+Conference, 12.09.2024 <br>
 [AutoML2024](https://2024.automl.cc/), Jussieu, Paris. <br>
 
 ***Automated Spatio-Temporal Weather Modeling for Load Forecasting*** <br>
-Conference, 27-28.08.2024 <br>
+Conference, 27.08.2024 <br>
 [INREC 2024](https://www.inrec.wiwi.uni-due.de/), Essen. <br>
 
 ***A Bandit Approach With Evolutionary Operators for Model Selection:  Application to Neural Architecture Optimization for Image Classification*** <br>

@@ -9,6 +9,11 @@ author_profile: true
 
 <h2>2025</h2>
 
+
+***DRAGAM: Automated selection of adaptive additive models, application to load consumption forecasting*** <br>
+GAM seminar, with Keshav Das, 04.02.2025 <br>
+EDF Lab Paris-Saclay, Palaiseau. <br>
+
 ***Automated Deep Learning: Algorithms and Software for Energy Sustainability*** <br>
 PhD Defense, 24.01.2025 <br>
 EDF Lab Paris-Saclay, Palaiseau. <br>

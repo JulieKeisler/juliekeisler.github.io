@@ -47,7 +47,7 @@ Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024
 
 ***Automated Spatio-Temporal Weather Modeling for Load Forecasting.*** <br>
 **Julie Keisler**, Margaux Brégère. <br>
-INREC 2024, Best paper award. <br>
+INREC 2024, [Best paper award](https://www.linkedin.com/posts/house-of-energy-markets-and-finance_inrec24-internationalruhrenergyconference-ugcPost-7234574126684770304-WPIJ/?utm_source=share&utm_medium=member_desktop). <br>
 [Preprint](https://hal.science/hal-04703410)
 
 

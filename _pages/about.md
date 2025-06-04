@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year PhD student at EDF R&D and at [CRIStAL](https://www.cristal.univ-lille.fr/) (University of Lille, Inria Nord Europe). I currently visit the [ARCHES](https://project.inria.fr/arches/) team from INRIA Paris.
+I am currently a researcher in the [ARCHES](https://project.inria.fr/arches/) team from INRIA Paris. My research focuses on AI-driven methods for statistical downscaling. However, I am also interested in automated machine learning, particularly neural architecture search, and the use of AI methods for the energy transition in general.
 
-I am supervised by [Pr. Claire Monteleoni](https://www.colorado.edu/faculty/claire-monteleoni/),  [Pr. El-Ghazali Talbi](https://www.cristal.univ-lille.fr/~talbi/) and [Margaux Brégère](https://margauxbregere.github.io/).
+I completed my PhD in January 2025 under the supervision of [Claire Monteleoni](https://www.colorado.edu/faculty/claire-monteleoni/) (INRIA Paris and the University of Colorado Boulder),  [El-Ghazali Talbi](https://www.cristal.univ-lille.fr/~talbi/) (INRIA Lille and Université de Lille), [Margaux Brégère](https://margauxbregere.github.io/) (EDF R&D and Sorbonne Université), Gilles Cabriel and Sandra Claudel. The thesis is entitled *Automated Deep Learning: algorithms and software for energy sustainability*. The manuscript will soon be available [*here*](https://theses.fr/s340900), but the defense can be seen [*here*](https://www.youtube.com/live/nxmE5_rMVeA?si=vsd899L1BWkxX3VK) and the slides found [*here*](https://drive.google.com/file/d/1J3qLndtOVZD9qvkz0i1A-dbqDRx-FR8_/view?usp=drive_link).
 
-My research focuses on automated deep learning for temporal and spatiotemporal forecasting, in particular for energy-related topics. I developped a first python package called [DRAGON](https://dragon-tutorial.readthedocs.io/en/latest/) to optimize deep neural networks. The code is available on my github. If you want to test it, do not hesite to get in touch with me!
+I developed a Python package called [DRAGON](https://dragon-tutorial.readthedocs.io/en/latest/) to optimise deep neural networks and, more recently, generalised additive models. The code is available on my GitHub. If you would like to test it, please get in touch! 

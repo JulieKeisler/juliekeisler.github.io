@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Julie Keisler"
 title_separator          : "-"
 name                     : &name "Julie Keisler"
-description              : &description "Ph.D. Student | EDF Lab Paris-Saclay & Arches Team (INRIA Paris) & Bonus Team (INRIA Lille)"
+description              : &description "PhD, starting research position | Arches Team (INRIA Paris)"
 url                      : https://juliekeisler.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "juliekeisler/juliekeisler.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Julie Keisler"
   avatar           : "https://avatars.githubusercontent.com/u/46896800?v=4"
-  bio              : "Third-year PhD Student at EDF Lab Paris-Saclay, Arches Team (INRIA Paris) and Bonus Team (INRIA Lille)"
+  bio              : "Starting research position, Arches Team (INRIA Paris)"
   location         : "Paris, France"
   employer         : 
   pubmed           : 

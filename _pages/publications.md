@@ -18,7 +18,7 @@ author_profile: true
 ***AutoML Algorithms for Online Generalized Additive Model Selection: Application to Electricity Demand Forecasting.*** <br>
 Keshav Das, **Julie Keisler**, Amaury Durand, Margaux Brégère. <br>
 AutoML25, ABCD Track.<br>
-[Preprint](https://arxiv.org/abs/2503.24019) | [Code](https://anonymous.4open.science/r/dragam-88D0) | [Open Review](https://openreview.net/forum?id=ADeWkyOVYA#discussion)
+[Paper](https://proceedings.mlr.press/v293/das25a.html) | [Code](https://anonymous.4open.science/r/dragam-88D0) | [Open Review](https://openreview.net/forum?id=ADeWkyOVYA#discussion)
 
 ***WindDragon: automated deep learning for regional wind power forecasting.*** <br>
 **Julie Keisler**, Etienne Le Naour.<br>

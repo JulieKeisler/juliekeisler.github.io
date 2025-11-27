@@ -9,6 +9,17 @@ author_profile: true
 
 <h2>2025</h2>
 
+***Generative Unpaired Domain Alignment via Shared-Structure Decomposition*** <br>
+Data Innovation Lab seminar, 07.11.2025 <br>
+EDF Lab Paris-Saclay, Palaiseau. <br>
+
+***Témoignage thèse CIFRE*** <br>
+Forum entreprises maths, 07.10.2025 <br>
+CNAM, Paris. <br>
+
+***Downscaling CMIP6 wind speed to ERA5 resolution using Deep Learning*** <br>
+Kayrros x INRIA seminar, 01.10.2025 <br>
+INRIA Paris, Paris. <br>
 
 ***DRAGAM: Automated selection of adaptive additive models, application to load consumption forecasting*** <br>
 GAM seminar, with Keshav Das, 04.02.2025 <br>

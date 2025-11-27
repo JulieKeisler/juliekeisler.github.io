@@ -10,6 +10,10 @@ author_profile: true
 <h2>2025</h2>
 
 ***Generative Unpaired Domain Alignment via Shared-Structure Decomposition*** <br>
+Défi INRIA x EDF seminar, 25.11.2025 <br>
+EDF Lab Paris-Saclay, Palaiseau. <br>
+
+***Generative Unpaired Domain Alignment via Shared-Structure Decomposition*** <br>
 Data Innovation Lab seminar, 07.11.2025 <br>
 EDF Lab Paris-Saclay, Palaiseau. <br>
 

@@ -45,6 +45,10 @@ Workshop paper at ”Tackling Climate Change with Machine Learning”, ICLR 2024
 
 <h2>Preprints</h2>
 
+***SerpentFlow: Generative Unpaired Domain Alignment via Shared-Structure Decomposition.***  <br>
+**Julie Keisler**, Anastase Charantonis, Yannig Goude, Boutheina Oueslati, Claire Monteleoni. <br>
+[Preprint](https://arxiv.org/abs/2601.01979)
+
 ***Automated Spatio-Temporal Weather Modeling for Load Forecasting.*** <br>
 **Julie Keisler**, Margaux Brégère. <br>
 INREC 2024, [Best paper award](https://www.linkedin.com/posts/house-of-energy-markets-and-finance_inrec24-internationalruhrenergyconference-ugcPost-7234574126684770304-WPIJ/?utm_source=share&utm_medium=member_desktop). <br>

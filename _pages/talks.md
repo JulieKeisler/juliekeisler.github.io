@@ -10,7 +10,7 @@ author_profile: true
 <h2>2026</h2>
 
 ***SerpentFlow, unpaired downscaling of wind fields***<br>
-[PEPR Climat - TRACCS - Assemblée Générale 2026, PC10 Localising](https://traccs-ag-2026.sciencesconf.org/)<br>
+[PEPR Climat - TRACCS - Assemblée Générale 2026, PC10 Localising, 06.02.2026](https://traccs-ag-2026.sciencesconf.org/)<br>
 Académie du Climat, Paris.<br>
 
 <h2>2025</h2>

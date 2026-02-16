@@ -5,6 +5,14 @@ permalink: /teaching/
 author_profile: true
 ---
 
+## Teaching Activities
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+---
+
 ## Internship Supervision
 
 ### 2026 — INRIA Paris
@@ -31,10 +39,4 @@ author_profile: true
   March 2024 – October 2024  
   Co-supervised with Bachir Hamrouche and Guillaume Lambert.
 
----
 
-## Teaching Activities
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}

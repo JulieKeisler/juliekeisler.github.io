@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Keisler — Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #1a1a2e;
+            --paper: #f8f6f1;
+            --accent: #c1440e;
+            --accent-light: #e8613c;
+            --sage: #4a6741;
+            --sage-light: #6b8f62;
+            --muted: #7a7a8c;
+            --divider: #d8d4cc;
+            --card-bg: #ffffff;
+            --card-shadow: 0 2px 20px rgba(26,26,46,0.06);
+            --card-hover: 0 8px 40px rgba(26,26,46,0.1);
+            --serif: 'DM Serif Display', Georgia, serif;
+            --sans: 'Outfit', sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.7;
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+
+        /* ─── GRAIN OVERLAY ─── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* ─── NAV ─── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(248,246,241,0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--divider);
+            transition: transform 0.3s ease;
+        }
+
+        nav .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        nav .logo {
+            font-family: var(--serif);
+            font-size: 1.25rem;
+            color: var(--ink);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.88rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        nav .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        nav .nav-links a:hover { color: var(--ink); }
+        nav .nav-links a:hover::after { width: 100%; }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--ink);
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(193,68,14,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(74,103,65,0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text {
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .hero-label {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-family: var(--serif);
+            font-size: clamp(2.8rem, 5vw, 4.2rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title em {
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        .hero-bio {
+            font-size: 1.05rem;
+            color: var(--muted);
+            max-width: 520px;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .hero-bio a {
+            color: var(--sage);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.2s;
+        }
+        .hero-bio a:hover { color: var(--accent); }
+
+        .hero-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.6rem 1.2rem;
+            border: 1.5px solid var(--divider);
+            border-radius: 100px;
+            text-decoration: none;
+            color: var(--ink);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.25s;
+        }
+
+        .hero-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(193,68,14,0.1);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            animation: fadeUp 0.8s 0.2s ease both;
+        }
+
+        .avatar-frame {
+            position: relative;
+            width: 320px;
+            height: 320px;
+        }
+
+        .avatar-frame::before {
+            content: '';
+            position: absolute;
+            inset: -12px;
+            border: 2px solid var(--divider);
+            border-radius: 50%;
+            animation: slowRotate 30s linear infinite;
+        }
+
+        .avatar-frame::after {
+            content: '';
+            position: absolute;
+            inset: -24px;
+            border: 1px dashed var(--divider);
+            border-radius: 50%;
+            animation: slowRotate 50s linear infinite reverse;
+        }
+
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: grayscale(20%) contrast(1.05);
+        }
+
+        .location-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            padding: 0.4rem 0.8rem;
+            border-radius: 100px;
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* ─── SECTIONS ─── */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-label {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            letter-spacing: -0.02em;
+            margin-bottom: 3rem;
+        }
+
+        .section-divider {
+            width: 100%;
+            height: 1px;
+            background: var(--divider);
+            margin: 0 auto;
+            max-width: 1100px;
+        }
+
+        /* ─── PUBLICATIONS ─── */
+        .pub-year {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--sage);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .pub-year:first-of-type { margin-top: 0; }
+
+        .pub-card {
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            border-radius: 12px;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pub-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--accent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pub-card:hover {
+            box-shadow: var(--card-hover);
+            transform: translateY(-2px);
+        }
+
+        .pub-card:hover::before { opacity: 1; }
+
+        .pub-title {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-venue {
+            font-size: 0.85rem;
+            color: var(--sage);
+            font-style: italic;
+            margin-bottom: 0.8rem;
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-links a {
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.25rem 0.7rem;
+            border: 1px solid rgba(193,68,14,0.25);
+            border-radius: 100px;
+            transition: all 0.2s;
+        }
+
+        .pub-links a:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        /* ─── TALKS ─── */
+        .talks-grid {
+            display: grid;
+            gap: 0;
+        }
+
+        .talk-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1.5rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--divider);
+            transition: background 0.2s;
+        }
+
+        .talk-item:hover {
+            background: rgba(255,255,255,0.5);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: -1rem;
+            margin-right: -1rem;
+            border-radius: 8px;
+        }
+
+        .talk-date {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            color: var(--muted);
+            padding-top: 0.2rem;
+        }
+
+        .talk-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .talk-venue {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .talk-venue a {
+            color: var(--sage);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .talk-links {
+            margin-top: 0.4rem;
+        }
+
+        .talk-links a {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 0.8rem;
+        }
+
+        .talk-links a:hover { text-decoration: underline; }
+
+        .talk-year-header {
+            font-family: var(--serif);
+            font-size: 1.6rem;
+            color: var(--sage);
+            margin-top: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .talk-year-header:first-of-type { margin-top: 0; }
+
+        /* ─── CV ─── */
+        .cv-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .cv-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--sage));
+        }
+
+        .cv-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .cv-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid var(--paper);
+            transform: translateX(-4px);
+        }
+
+        .cv-dates {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .cv-role {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .cv-org {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            padding: 0.8rem 1.6rem;
+            background: var(--ink);
+            color: var(--paper);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border-radius: 100px;
+            transition: all 0.25s;
+        }
+
+        .cv-download:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(193,68,14,0.2);
+        }
+
+        /* ─── TEACHING ─── */
+        .teaching-section {
+            margin-bottom: 3rem;
+        }
+
+        .teaching-heading {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--sage);
+        }
+
+        .teaching-subheading {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .teaching-meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .tutorial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .tutorial-card {
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            border-radius: 10px;
+            padding: 1rem 1.2rem;
+            transition: all 0.25s;
+        }
+
+        .tutorial-card:hover {
+            box-shadow: var(--card-hover);
+            transform: translateY(-2px);
+        }
+
+        .tutorial-num {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .tutorial-name {
+            font-weight: 500;
+            font-size: 0.92rem;
+            margin: 0.25rem 0 0.5rem;
+        }
+
+        .tutorial-links {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .tutorial-links a {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.2rem 0.5rem;
+            border: 1px solid rgba(193,68,14,0.2);
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .tutorial-links a:hover {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .intern-card {
+            background: var(--card-bg);
+            border: 1px solid var(--divider);
+            border-radius: 10px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.25s;
+        }
+
+        .intern-card:hover {
+            box-shadow: var(--card-shadow);
+        }
+
+        .intern-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .intern-topic {
+            font-size: 0.88rem;
+            color: var(--muted);
+            font-style: italic;
+            margin: 0.2rem 0;
+        }
+
+        .intern-details {
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        .intern-details a {
+            color: var(--sage);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .intern-year-label {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            color: var(--sage);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .intern-year-label:first-of-type { margin-top: 0; }
+
+        /* ─── FOOTER ─── */
+        footer {
+            border-top: 1px solid var(--divider);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        footer a:hover { text-decoration: underline; }
+
+        /* ─── ANIMATIONS ─── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slowRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2.5rem;
+            }
+
+            .hero-visual { order: -1; }
+
+            .avatar-frame {
+                width: 220px;
+                height: 220px;
+            }
+
+            .hero-bio { max-width: 100%; }
+
+            .hero-links { justify-content: center; }
+
+            nav .nav-links { display: none; }
+            nav .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: rgba(248,246,241,0.98);
+                backdrop-filter: blur(16px);
+                padding: 1.5rem 2rem;
+                gap: 1rem;
+                border-bottom: 1px solid var(--divider);
+            }
+
+            .hamburger { display: block; }
+
+            .talk-item {
+                grid-template-columns: 1fr;
+                gap: 0.3rem;
+            }
+
+            .tutorial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="logo">J.K.</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ─── HERO / ABOUT ─── -->
+<section class="hero" id="about">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <span class="hero-label">INRIA Paris · ARCHES Team</span>
+            <h1 class="hero-title">Julie <em>Keisler</em></h1>
+            <p class="hero-bio">
+                I am currently a researcher in the <a href="https://team.inria.fr/arches/team-members/">ARCHES</a> team from INRIA Paris. My research focuses on AI-driven methods for statistical downscaling. I am also interested in automated machine learning, particularly neural architecture search, and the use of AI methods for the energy transition.
+            </p>
+            <p class="hero-bio">
+                I completed my PhD in January 2025 under the supervision of <a href="https://www.colorado.edu/faculty/claire-monteleoni/">Claire Monteleoni</a> (INRIA Paris and the University of Colorado Boulder), <a href="https://www.cristal.univ-lille.fr/~talbi/">El-Ghazali Talbi</a> (INRIA Lille and Université de Lille), <a href="https://margauxbregere.github.io/">Margaux Brégère</a> (EDF R&D and Sorbonne Université), Gilles Cabriel and Sandra Claudel. The thesis is entitled <em>Automated Deep Learning: algorithms and software for energy sustainability</em>. The manuscript is available <a href="https://theses.fr/2025ULILB001">here</a>, the defense can be watched <a href="https://www.youtube.com/live/nxmE5_rMVeA?si=vsd899L1BWkxX3VK">here</a> and the slides found <a href="https://drive.google.com/file/d/1J3qLndtOVZD9qvkz0i1A-dbqDRx-FR8_/view?usp=drive_link">here</a>.
+            </p>
+            <p class="hero-bio">
+                I developed a Python package called <a href="https://dragon-tutorial.readthedocs.io/en/latest/">DRAGON</a> to optimise deep neural networks and, more recently, generalised additive models. The code is available on my GitHub. If you would like to test it, please get in touch!
+            </p>
+            <div class="hero-links">
+                <a href="mailto:julie.keisler@inria.fr">✉ Email</a>
+                <a href="https://github.com/juliekeisler">⌘ GitHub</a>
+                <a href="https://scholar.google.com/citations?user=TWowILgAAAAJ&hl=fr">📚 Scholar</a>
+                <a href="https://orcid.org/0000-0002-7931-2132">🔗 ORCID</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="avatar-frame">
+                <img src="https://avatars.githubusercontent.com/u/46896800?v=4" alt="Julie Keisler">
+                <span class="location-badge">📍 Paris, France</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── PUBLICATIONS ─── -->
+<section id="publications">
+    <div class="reveal">
+        <span class="section-label">Research Output</span>
+        <h2 class="section-title">Publications</h2>
+    </div>
+
+    <h3 class="pub-year reveal">2026</h3>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">Generative Unsupervised Downscaling of Climate Models via Domain Alignment: Application to Wind Fields</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Boutheina Oueslati, Anastase Charantonis, Yannig Goude, Claire Monteleoni</div>
+        <div class="pub-venue">Climate Informatics 2026</div>
+        <div class="pub-links">
+            <a href="https://hal.science/hal-05491335">Preprint</a>
+        </div>
+    </div>
+
+    <h3 class="pub-year reveal">2025</h3>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">AutoML Algorithms for Online Generalized Additive Model Selection: Application to Electricity Demand Forecasting</div>
+        <div class="pub-authors">Keshav Das, <strong>Julie Keisler</strong>, Amaury Durand, Margaux Brégère</div>
+        <div class="pub-venue">AutoML25, ABCD Track</div>
+        <div class="pub-links">
+            <a href="https://proceedings.mlr.press/v293/das25a.html">Paper</a>
+            <a href="https://anonymous.4open.science/r/dragam-88D0">Code</a>
+            <a href="https://openreview.net/forum?id=ADeWkyOVYA#discussion">Open Review</a>
+        </div>
+    </div>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">WindDragon: automated deep learning for regional wind power forecasting</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Etienne Le Naour</div>
+        <div class="pub-venue">Environmental Data Science</div>
+        <div class="pub-links">
+            <a href="https://www.cambridge.org/core/journals/environmental-data-science/article/winddragon-automated-deep-learning-for-regional-wind-power-forecasting/64B3D7345C9B3EE66574E9F407F31482">Paper</a>
+        </div>
+    </div>
+
+    <h3 class="pub-year reveal">2024</h3>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">An algorithmic framework for the optimization of deep neural networks architectures and hyperparameters</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, El-Ghazali Talbi, Sandra Claudel, Gilles Cabriel</div>
+        <div class="pub-venue">Journal of Machine Learning Research</div>
+        <div class="pub-links">
+            <a href="https://jmlr.org/papers/v25/23-0166.html">Paper</a>
+            <a href="https://github.com/JulieKeisler/dragon">Code</a>
+        </div>
+    </div>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">Automated Deep Learning for Load Forecasting</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Sandra Claudel, Gilles Cabriel, Margaux Brégère</div>
+        <div class="pub-venue">AutoML24, ABCD Track</div>
+        <div class="pub-links">
+            <a href="https://proceedings.mlr.press/v256/keisler24a.html">Paper</a>
+            <a href="https://github.com/JulieKeisler/automl">Code</a>
+            <a href="https://openreview.net/forum?id=i8o3xQnfmV">Open Review</a>
+        </div>
+    </div>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">WindDragon: Enhancing wind power forecasting with Automated Deep Learning</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Etienne Le Naour</div>
+        <div class="pub-venue">Workshop paper at "Tackling Climate Change with Machine Learning", ICLR 2024</div>
+        <div class="pub-links">
+            <a href="https://www.climatechange.ai/papers/iclr2024/29">Paper</a>
+        </div>
+    </div>
+
+    <h3 class="pub-year reveal">Preprints</h3>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">SerpentFlow: Generative Unpaired Domain Alignment via Shared-Structure Decomposition</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Anastase Charantonis, Yannig Goude, Boutheina Oueslati, Claire Monteleoni</div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2601.01979">Preprint</a>
+        </div>
+    </div>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">Automated Spatio-Temporal Weather Modeling for Load Forecasting</div>
+        <div class="pub-authors"><strong>Julie Keisler</strong>, Margaux Brégère</div>
+        <div class="pub-venue">INREC 2024 — <a href="https://www.linkedin.com/posts/house-of-energy-markets-and-finance_inrec24-internationalruhrenergyconference-ugcPost-7234574126684770304-WPIJ/" style="color:var(--accent)">Best paper award</a></div>
+        <div class="pub-links">
+            <a href="https://hal.science/hal-04703410">Preprint</a>
+        </div>
+    </div>
+
+    <div class="pub-card reveal">
+        <div class="pub-title">A Bandit Approach with Evolutionary Operators for Model Selection</div>
+        <div class="pub-authors">Margaux Brégère, <strong>Julie Keisler</strong></div>
+        <div class="pub-venue">International Workshop on Resource-Efficient Learning for Knowledge Discovery, KDD 2024</div>
+        <div class="pub-links">
+            <a href="https://arxiv.org/abs/2402.05144">Preprint</a>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── TALKS ─── -->
+<section id="talks">
+    <div class="reveal">
+        <span class="section-label">Presentations</span>
+        <h2 class="section-title">Talks</h2>
+    </div>
+
+    <div class="talks-grid">
+
+        <h3 class="talk-year-header reveal">2026</h3>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">31.03.2026</div>
+            <div>
+                <div class="talk-title">Generative Modeling for Global Circulation Models</div>
+                <div class="talk-venue">EDL Seminar<br>EDF Lab Paris-Saclay, Palaiseau</div>
+            </div>
+        </div>
+        
+        <div class="talk-item reveal">
+            <div class="talk-date">26.03.2026</div>
+            <div>
+                <div class="talk-title">IA pour la météo et le climat</div>
+                <div class="talk-venue"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7443280642622144512//">Cycle supérieur de l'Intelligence Artificielle de l'IHEMI (ministère de l'intérieur) </a><br>INRIA Paris, Paris</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">06.02.2026</div>
+            <div>
+                <div class="talk-title">SerpentFlow, unpaired downscaling of wind fields</div>
+                <div class="talk-venue"><a href="https://traccs-ag-2026.sciencesconf.org/">PEPR Climat - TRACCS - Assemblée Générale 2026, PC10 Localising</a><br>Académie du Climat, Paris</div>
+            </div>
+        </div>
+
+        <h3 class="talk-year-header reveal">2025</h3>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">10.12.2025</div>
+            <div>
+                <div class="talk-title">Downscaling CMIP6 wind speed using Deep Learning</div>
+                <div class="talk-venue">Séminaire descente d'échelle et Apprentissage Machine<br>Cerfacs, Toulouse</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">25.11.2025</div>
+            <div>
+                <div class="talk-title">Generative Unpaired Domain Alignment via Shared-Structure Decomposition</div>
+                <div class="talk-venue">Défi INRIA x EDF seminar<br>EDF Lab Paris-Saclay, Palaiseau</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">07.11.2025</div>
+            <div>
+                <div class="talk-title">Generative Unpaired Domain Alignment via Shared-Structure Decomposition</div>
+                <div class="talk-venue">Data Innovation Lab seminar<br>EDF Lab Paris-Saclay, Palaiseau</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">07.10.2025</div>
+            <div>
+                <div class="talk-title">Témoignage thèse CIFRE</div>
+                <div class="talk-venue">Forum entreprises maths<br>CNAM, Paris</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">01.10.2025</div>
+            <div>
+                <div class="talk-title">Downscaling CMIP6 wind speed to ERA5 resolution using Deep Learning</div>
+                <div class="talk-venue">Kayrros x INRIA seminar<br>INRIA Paris, Paris</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">04.02.2025</div>
+            <div>
+                <div class="talk-title">DRAGAM: Automated selection of adaptive additive models, application to load consumption forecasting</div>
+                <div class="talk-venue">GAM seminar, with Keshav Das<br>EDF Lab Paris-Saclay, Palaiseau</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">24.01.2025</div>
+            <div>
+                <div class="talk-title">Automated Deep Learning: Algorithms and Software for Energy Sustainability</div>
+                <div class="talk-venue">PhD Defense<br>EDF Lab Paris-Saclay, Palaiseau</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">08.01.2025</div>
+            <div>
+                <div class="talk-title">Automated Deep Learning: Algorithms and Software for Energy Sustainability</div>
+                <div class="talk-venue"><a href="https://www.lsce.ipsl.fr/">LSCE Machine Learning Seminar</a>, LSCE, Saint-Aubin</div>
+            </div>
+        </div>
+
+        <h3 class="talk-year-header reveal">2024</h3>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">28.11.2024</div>
+            <div>
+                <div class="talk-title">Automated Deep Learning: Algorithms and Software for Energy Sustainability</div>
+                <div class="talk-venue">Séminaire invité-entreprise M2 Mathématiques et Apprentissage Statistique<br>UVSQ, Saint-Quentin-en-Yvelines</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">17.09.2024</div>
+            <div>
+                <div class="talk-title">A Bandit Approach With Evolutionary Operators for Model Selection</div>
+                <div class="talk-venue"><a href="https://conferences.enbis.org/event/34/">ENBIS-24</a>, Leuven, Belgium</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">12.09.2024</div>
+            <div>
+                <div class="talk-title">Automated Deep Learning for load forecasting</div>
+                <div class="talk-venue"><a href="https://2024.automl.cc/">AutoML2024</a>, Jussieu, Paris</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">27.08.2024</div>
+            <div>
+                <div class="talk-title">Automated Spatio-Temporal Weather Modeling for Load Forecasting</div>
+                <div class="talk-venue"><a href="https://www.inrec.wiwi.uni-due.de/">INREC 2024</a>, Essen</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">25.08.2024</div>
+            <div>
+                <div class="talk-title">A Bandit Approach With Evolutionary Operators for Model Selection</div>
+                <div class="talk-venue"><a href="https://chuxuzhang.github.io/RelKD/">SIGKDD Workshop on Resource-Efficient Learning</a>, SIGKDD 2024, Barcelona</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">25.05.2024</div>
+            <div>
+                <div class="talk-title">Mutant-UCB: entre bandits et algorithme évolutionnaire, une approche pour la sélection de modèles</div>
+                <div class="talk-venue"><a href="https://jds2024.sciencesconf.org/">55es Journées de Statistique de la SFdS</a>, Université de Bordeaux, Bordeaux</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">16.05.2024</div>
+            <div>
+                <div class="talk-title">Automated Deep Learning for load forecasting</div>
+                <div class="talk-venue">Workshop series on applied ML in Energy and Climate Science, online</div>
+                <div class="talk-links"><a href="https://drive.google.com/file/d/1GZY0yqCf0EP8vIzTN39WrMVt74o4m4Lh/view?usp=sharing">Slides</a></div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">11.05.2024</div>
+            <div>
+                <div class="talk-title">WindDragon: Enhancing wind power forecasting with Automated Deep Learning</div>
+                <div class="talk-venue"><a href="https://www.climatechange.ai/events/iclr2024">Tackling Climate Change with ML</a>, ICLR 2024, Wien</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">13.02.2024</div>
+            <div>
+                <div class="talk-title">WindDragon: Enhancing wind power forecasting with Automated Deep Learning</div>
+                <div class="talk-venue"><a href="https://project.inria.fr/arches/">ARCHES Seminar</a>, Inria Paris, Paris</div>
+            </div>
+        </div>
+
+        <h3 class="talk-year-header reveal">2023</h3>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">27.11.2023</div>
+            <div>
+                <div class="talk-title">Optimizing Deep Neural Networks Architectures and Hyperparameters using bandits algorithms</div>
+                <div class="talk-venue"><a href="https://team.inria.fr/scool/">SCOOL Seminar</a>, Inria Nord Europe, Lille</div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">13.09.2023</div>
+            <div>
+                <div class="talk-title">Short-term load forecasting using optimized Deep Neural Networks</div>
+                <div class="talk-venue"><a href="https://wpi.univie.ac.at/">ConfStochStatML</a>, Wolfgang Pauli Institute, Wien</div>
+                <div class="talk-links">
+                    <a href="https://wpi.univie.ac.at/fileadmin/user_upload/k_wpi/WPI_Abstract_list-contributed_speakers-finally__1_.pdf">Abstract</a>
+                    <a href="https://drive.google.com/file/d/1Jl8lYudCZTTRNaHEKJz9UJ8cguXYGwni/view?usp=sharing">Slides</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">03.07.2023</div>
+            <div>
+                <div class="talk-title">Algorithme de bandits pour l'optimisation des hyperparamètres de réseaux de neurones</div>
+                <div class="talk-venue"><a href="https://jds2023.sciencesconf.org/">54es Journées de Statistique de la SFdS</a>, Université libre de Bruxelles, Belgique</div>
+                <div class="talk-links">
+                    <a href="https://drive.google.com/file/d/1SyiOC070UOXvOWrTD-TEiprZR7gVYXqW/view">Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="talk-year-header reveal">2022</h3>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">29.11.2022</div>
+            <div>
+                <div class="talk-title">Evolving directed acyclic graphs for Automated Deep Learning: application to short-term load forecasting</div>
+                <div class="talk-venue"><a href="https://www.fondation-hadamard.fr/fr/articles/2023/01/12/pgmodays-2022/">PGMO Days</a>, EDF Lab Paris-Saclay</div>
+                <div class="talk-links">
+                    <a href="https://www.fondation-hadamard.fr/media/filer_public/64/18/64180dc1-5ca3-4806-bb44-ce17df8abf4b/pgmo-2022-booklet.pdf">Abstract</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="talk-item reveal">
+            <div class="talk-date">19.07.2022</div>
+            <div>
+                <div class="talk-title">Deep Transformers Optimization for load forecasting</div>
+                <div class="talk-venue"><a href="https://ola2022.sciencesconf.org/">OLA'2023</a>, Syracuse</div>
+                <div class="talk-links">
+                    <a href="https://ola2022.sciencesconf.org/data/pages/Proceedings_1.pdf">Paper</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── CV ─── -->
+<section id="cv">
+    <div class="reveal">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">Curriculum Vitae</h2>
+    </div>
+
+    <div class="cv-timeline">
+        <div class="cv-item reveal">
+            <div class="cv-dates">2025 — 2027</div>
+            <div class="cv-role">Starting Research Position</div>
+            <div class="cv-org">INRIA Paris and EDF R&D</div>
+        </div>
+        <div class="cv-item reveal">
+            <div class="cv-dates">2022 — 2025</div>
+            <div class="cv-role">Ph.D in Computer Science</div>
+            <div class="cv-org">EDF R&D, University of Lille and INRIA Paris</div>
+        </div>
+        <div class="cv-item reveal">
+            <div class="cv-dates">2020</div>
+            <div class="cv-role">Exchange Student</div>
+            <div class="cv-org">ETH Zürich</div>
+        </div>
+        <div class="cv-item reveal">
+            <div class="cv-dates">2018 — 2021</div>
+            <div class="cv-role">Engineering Track</div>
+            <div class="cv-org">Télécom Paris</div>
+        </div>
+    </div>
+
+    <a class="cv-download reveal" href="https://juliekeisler.github.io/files/cv.pdf">
+        ↓ Download Full CV
+    </a>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── TEACHING ─── -->
+<section id="teaching">
+    <div class="reveal">
+        <span class="section-label">Academic</span>
+        <h2 class="section-title">Teaching</h2>
+    </div>
+
+    <!-- Course -->
+    <div class="teaching-section reveal">
+        <h3 class="teaching-heading">Teaching Activities</h3>
+        <div class="teaching-subheading"><a href="https://juliekeisler.github.io/teaching/2024_MIA" style="color:var(--ink);text-decoration:underline;text-underline-offset:3px;">Master MIA</a></div>
+        <div class="teaching-meta">Practical Work: Introduction to Deep Learning — Faculté des Sciences d'Orsay, Université Paris Saclay, 2025</div>
+
+        <div class="tutorial-grid">
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 1</div>
+                <div class="tutorial-name">Introduction to Pytorch</div>
+                <div class="tutorial-links">
+                    <a href="https://drive.google.com/file/d/1Fp93M1e5TABIA_y8NsthbJe5lzH1WauH/view?usp=sharing">Tutorial</a>
+                    <a href="https://colab.research.google.com/drive/17G1RF1QbgiXiE66RplrEhlfWTLt0QhSq">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 2</div>
+                <div class="tutorial-name">Hyperparameters and Architecture Optimization</div>
+                <div class="tutorial-links">
+                    <a href="https://drive.google.com/file/d/1o58U--pdyPjYGvOQgiLvEVkfn2DJrFwt/view?usp=sharing">Tutorial</a>
+                    <a href="https://colab.research.google.com/drive/18w9Z21gaOe0-ndrFsQQL-lLuLDuWDVyn#scrollTo=e60tuBRd5zVM">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 3</div>
+                <div class="tutorial-name">Convolutional Neural Networks (CNNs)</div>
+                <div class="tutorial-links">
+                    <a href="https://drive.google.com/file/d/1htj7hs_bGim-Udd4XQCeONPZ7-02eeOz/view?usp=sharing">Tutorial</a>
+                    <a href="https://colab.research.google.com/drive/1t41kZ8SDIKeSNRtEJ9kQ63Y-tSoytxZY#scrollTo=ea_iPD8zTTCw">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 4</div>
+                <div class="tutorial-name">Generative Models (GANs)</div>
+                <div class="tutorial-links">
+                    <a href="https://colab.research.google.com/drive/1gcCotVkyTJ7VHNPcAvCwD8Vpc0y0BRiX">Tutorial</a>
+                    <a href="https://colab.research.google.com/drive/1_AzSlghP_-oU_Q-cmQmlVrl5HJxPRZbQ#scrollTo=QukXeGTw7rPi">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 5</div>
+                <div class="tutorial-name">Generative Models (Diffusion)</div>
+                <div class="tutorial-links">
+                    <a href="https://colab.research.google.com/drive/1j9t_UNIRjv8EvF2K8e8_kUeMI34-jfS4?usp=sharing">Tutorial</a>
+                    <a href="https://colab.research.google.com/drive/152sLcvFaPqIdrpac2CJdzVNPUtNhx_jm?usp=sharing">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 6</div>
+                <div class="tutorial-name">Recurrent Neural Networks (RNNs)</div>
+                <div class="tutorial-links">
+                    <a href="https://drive.google.com/file/d/1dJNF_try1mcfxE2eTNoJzTvFLDmF_FHn/view?usp=sharing">Tutorial</a>
+                    <a href="https://drive.google.com/file/d/1DW0TATJiXcuYKZxIKhhsQa3HC6jDtkf_/view?usp=sharing">Correction</a>
+                </div>
+            </div>
+            <div class="tutorial-card">
+                <div class="tutorial-num">Tutorial 7</div>
+                <div class="tutorial-name">Graph Neural Networks</div>
+                <div class="tutorial-links">
+                    <a href="https://drive.google.com/file/d/1hqJA0vyESVz478DKhOf1nS6OYU_2PN9A/view?usp=sharing">Tutorial</a>
+                    <a href="https://drive.google.com/file/d/1k7K9HqZYVhFgUMiq50sQS748TuewrsGs/view?usp=sharing">Correction</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internships -->
+    <div class="teaching-section reveal">
+        <h3 class="teaching-heading">Internship Supervision</h3>
+
+        <div class="intern-year-label">2026 — INRIA Paris</div>
+
+        <div class="intern-card">
+            <div class="intern-name">Manon Tavernier</div>
+            <div class="intern-topic">Statistical temporal downscaling of climate models</div>
+            <div class="intern-details">March 2026 – August 2026 · Co-supervised with Anastase Charantonis</div>
+        </div>
+        
+        <div class="intern-card">
+            <div class="intern-name">Haidar Ali Yousef</div>
+            <div class="intern-topic">Statistical climate downscaling with generative models</div>
+            <div class="intern-details">February 2026 – July 2026 · Co-supervised with Anastase Charantonis</div>
+        </div>
+
+        <div class="intern-card">
+            <div class="intern-name">Elyas Chikhaoui</div>
+            <div class="intern-topic">Symbolic regression for satellite data using DRAGON</div>
+            <div class="intern-details">January 2026 – June 2026 · Co-supervised with Anastase Charantonis</div>
+        </div>
+
+        <div class="intern-year-label">2024 — EDF R&D</div>
+
+        <div class="intern-card">
+            <div class="intern-name">Keshav Das</div>
+            <div class="intern-topic">Automated selection of adaptive additive models, application to load consumption forecasting</div>
+            <div class="intern-details">September 2024 – February 2025 · Co-supervised with <a href="https://margauxbregere.github.io/">Margaux Brégère</a> and Amaury Durand</div>
+        </div>
+
+        <div class="intern-card">
+            <div class="intern-name">Alban Derepas</div>
+            <div class="intern-topic">Future evolution of the wind resource and the interest of machine learning methods for statistical wind downscaling</div>
+            <div class="intern-details">May 2024 – November 2024 · Co-supervised with Boutheina Oueslati, <a href="https://www.imo.universite-paris-saclay.fr/~yannig.goude/about.html">Yannig Goude</a>, and <a href="https://www.colorado.edu/faculty/claire-monteleoni/">Claire Monteleoni</a></div>
+        </div>
+
+        <div class="intern-card">
+            <div class="intern-name">Roxane Goffinet</div>
+            <div class="intern-topic">Global forecasting models for a large number of time series</div>
+            <div class="intern-details">March 2024 – October 2024 · Co-supervised with Bachir Hamrouche and Guillaume Lambert</div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+    <p>© 2026 Julie Keisler · <a href="https://github.com/juliekeisler">GitHub</a></p>
+</footer>
+
+<script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    // Close nav on link click (mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
